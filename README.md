@@ -88,7 +88,7 @@ This project simulates a Layer 2 and Layer 3 enterprise network in **Cisco Packe
 
 * `.pkt` file: Open in Cisco Packet Tracer
 * `configs/`: Full CLI output from each switch
-* `topology/`: Diagram image (PNG)
+* `topology/`: ![Network Diagram](topology/network_diagram.png)
 * `simulation_instructions.md`: Setup guide and testing notes
 
 ---

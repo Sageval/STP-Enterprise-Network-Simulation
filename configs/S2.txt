@@ -1,0 +1,28 @@
+Switch> enable
+Switch# configure terminal
+
+! VLANs
+vlan 10
+ name Management
+vlan 20
+ name Sales
+vlan 30
+ name Engineering
+vlan 40
+ name Resources
+
+! Trunk Links to S1 and S3
+interface fa0/23
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+exit
+
+interface fa0/24
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+exit
+
+! STP Mode
+spanning-tree mode rapid-pvst
+
+exit
